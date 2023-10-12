@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <title>Temperature Convertor</title>
+</head>
+<body>
+    <div class="container">
+        <div class="temp">
+            <h2 class="title">Tempertaure Convertor</h2>
+        
+        <div class="result">
+            <span class="resHead">Result (Celcius) </span>
+            <h2 class="cel-val" id="celcius"></h2>
+        </div>
+
+        <div class="degree">
+            <div class="deg-field"> 
+                <label for="degf">Degrees</label>
+                <input type="number" name="deg" id="degf">
+            </div>
+            <div class="temp-field">
+                <label for="temp-type">Type</label>
+                <select name="temperatures" id="temp-type" autocomplete="on">
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+
+                </select>
+               
+            </div>
+            
+           
+        </div>
+        <button id="convert-btn">Convert</button>
+         </div>
+        
+    </div>
+    <script src="temp.js"></script>
+</body>
+</html>
